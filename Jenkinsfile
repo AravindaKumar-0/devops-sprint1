@@ -45,7 +45,7 @@ pipeline {
 
             steps {
 
-                sshagent(credentials: ['ubuntu']) {
+                sshagent(credentials: ['ubuntu-1']) {
 
                     sh """
                     ssh -o StrictHostKeyChecking=no ubuntu@${EC2_HOST} '
