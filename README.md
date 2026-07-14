@@ -4,6 +4,29 @@ A fully automated Continuous Integration and Continuous Deployment (CI/CD) pipel
 
 ---
 
+Skills Demonstrated
+
+• Linux Administration
+
+• Git
+
+• GitHub
+
+• Jenkins
+
+• Docker
+
+• Docker Hub
+
+• AWS EC2
+
+• SSH
+
+• CI/CD
+
+• Automation
+
+• Troubleshooting
 ## 🏗️ Architecture Flow
 
 ```text
@@ -68,3 +91,4 @@ Lessons Learned
 • SSH Authentication
 
 • Pipeline Debugging
+
