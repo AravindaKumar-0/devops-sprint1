@@ -1,1 +1,49 @@
-# devops-sprint1
+# Automated CI/CD DevOps Pipeline
+
+A fully automated Continuous Integration and Continuous Deployment (CI/CD) pipeline that builds, tests, and deploys a web application to an AWS EC2 instance using Jenkins, Docker, and GitHub Webhooks.
+
+---
+
+## 🏗️ Architecture Flow
+
+```text
+[Developer] ✨ git push
+      │
+      ▼
+  [GitHub] 🔗 Webhook Trigger
+      │
+      ▼
+  [Jenkins Server] ⚙️ Runs Pipeline
+      │
+      ├───► 🛠️ Builds Docker Image
+      └───► 🚀 Pushes to Registry (Docker Hub/ECR)
+      │
+      ▼
+  [AWS EC2 Instance] 🌐 Deployment via SSH
+      │
+      ├───► 📥 docker pull
+      ├───► 🛑 docker stop & rm (old container)
+      └───► ▶️ docker run (new container)
+      │
+      ▼
+[Live Website Updated!]
+
+Tech Stack
+
+    Version Control: GitHub
+
+    Automation Server: Jenkins
+
+    Containerization: Docker
+
+    Cloud Infrastructure: AWS EC2 (Ubuntu)
+
+    Web Server: [e.g., Nginx / Apache / Node.js - Change this to match your app]
+
+Key Features Demonstrated
+
+    Automated Triggers: GitHub Webhooks eliminate manual intervention; every code push triggers an instant build.
+
+    Infrastructure Isolation: Application code is entirely containerized using Docker, ensuring consistency between development and production environments.
+
+    Immutable Deployments: Old containers are cleanly torn down and replaced with fresh images, avoiding configuration drift on the server.
