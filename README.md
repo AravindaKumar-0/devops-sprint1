@@ -47,3 +47,24 @@ Key Features Demonstrated
     Infrastructure Isolation: Application code is entirely containerized using Docker, ensuring consistency between development and production environments.
 
     Immutable Deployments: Old containers are cleanly torn down and replaced with fresh images, avoiding configuration drift on the server.
+
+
+Lessons Learned
+
+• Docker socket permission issues
+
+• Jenkins Credentials
+
+• SSH Agent Plugin
+
+• GitHub Webhooks
+
+• Docker Hub Authentication
+
+• Jenkins Docker Group
+
+• EC2 Docker Permissions
+
+• SSH Authentication
+
+• Pipeline Debugging
