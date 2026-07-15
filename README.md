@@ -27,29 +27,10 @@ Skills Demonstrated
 • Automation
 
 • Troubleshooting
-## 🏗️ Architecture Flow
+             Architecture Flow
 
-```text
-[Developer] ✨ git push
-      │
-      ▼
-  [GitHub] 🔗 Webhook Trigger
-      │
-      ▼
-  [Jenkins Server] ⚙️ Runs Pipeline
-      │
-      ├───► 🛠️ Builds Docker Image
-      └───► 🚀 Pushes to Registry (Docker Hub/ECR)
-      │
-      ▼
-  [AWS EC2 Instance] 🌐 Deployment via SSH
-      │
-      ├───► 📥 docker pull
-      ├───► 🛑 docker stop & rm (old container)
-      └───► ▶️ docker run (new container)
-      │
-      ▼
-[Live Website Updated!]
+<img width="1321" height="1359" alt="ci-cd" src="https://github.com/user-attachments/assets/4eaec11c-e0df-4d25-81c5-10660eb5966d" />
+
 
 Tech Stack
 
